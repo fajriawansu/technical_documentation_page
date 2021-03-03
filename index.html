@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Basic HTML and HTML5 Documentations</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#how_to_write_a_code">How to Write a Code</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#say_hello_to_HTML">Say Hello to HTML</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#headline_and_paragraph">Headline and Paragraph</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#add_image_to_your_website">Add Image to Your Website</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#link_to_external_page">Link to External Page</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#link_to_internal_page">Link to Internal Page</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#turn_an_image_into_a_link">Turn an Image Into a Link</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#create_a_form">Create a Form</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#create_a_radio_button">Create a Radio Button</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#create_a_checkbox">Create a Checkbox</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#add_a_submit_button">Add a Submit Button</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#use_HTML5_to_require_a_field">Use HTML5 to Require a Field</a>
+        </li>
+      </ul>
+      <footer>Supported by:<a href="https://freecodecamp.org" target="_blank">Freecodecamp.org</a></footer>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>HTML, or HyperText Markup Language, is a markup language used to describe the structure of a web page. It uses a special syntax or notation to organize and give information about the page to the browser. Elements usually have opening and closing tags that surround and give meaning to content. For example, there are different tag options to place around text to show whether it is a heading, a paragraph, or a list.</p>
+        <p>The HyperText part of HTML comes from the early days of the web and its original use case. Pages usually contained static documents that contained references to other documents. These references contained hypertext links used by the browser to navigate to the reference document so the user could read the reference document without having to manually search for it.</p>
+    <p>
+    As web pages and web applications grow more complex, the W3 Consortium updates the HTML specification to ensure that a webpage can be shown reliably on any browser. The latest version of HTML is HTML5.</p>
+    <p>
+    This section introduces how to use HTML elements to give structure and meaning to your web content.</p>
+      </section>
+      <section class="main-section" id="how_to_write_a_code">
+        <header>How to Write a Code</header>
+        <p>Web pages can be created and modified by using professional HTML editors. However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac). I believe in that using a simple text editor is a good way to learn HTML.</p>
+    <p>
+    Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+        <ol>
+          <li>Open Notepad (PC) or TextEdit (Mac).</li>
+          <li>Write some HTML.</li>
+          <li>Save the HTML page (.htm).</li>
+          <li>View the HTML page in your browser.</li>
+        </ol>
+      </section>
+      <section class="main-section" id="say_hello_to_HTML">
+        <header>Say Hello to HTML</header>
+        <p>First, you'll start by building a simple web page using HTML. You can edit code in your code editor (Notepad or TextEdit).</p>
+        <p>Write this code:</p>
+        <p>
+          <code>&lt;h1&gt;Hello&lt;/h1&gt;</code>
+        </p>
+        <p>Most HTML Elements have opening tag and closing tag.</p>
+        <p><li>Opening tag look like this: <code>&lt;</code></li></p>
+        <p><li>Closing tag look like this: <code>&gt;</code></li></p>
+      </section>
+      <section class="main-section" id="headline_and_paragraph">
+        <header>Headline and Paragraph</header>
+        <p>The <b>h2</b> element you will be adding in this step will add a level two heading to the web page.</p>
+    <p>
+      This element tells the browser about the structure of your website. <b>h1</b> elements are often used for main headings, while h2 elements are generally used for subheadings. There are also <b>h3, h4, h5 and h6</b> elements to indicate different levels of subheadings.</p>
+        <p><b>p</b> elements are the preferred element for paragraph text on websites. <b>p</b> is short for "paragraph".</p>
+    <p>
+    You can create a paragraph element like this:
+
+          <code>&lt;p&gt;I'm a p tag!&lt;/p&gt;</code>
+    </p>
+      </section>
+      <section class="main-section" id="add_image_to_your_website">
+        <header>Add Image to Your Website</header>
+        <p>You can add images to your website by using the <b>img</b> element, and point to a specific image's URL using the <b>src</b> attribute.</p>
+        <p>Note that <b>img</b> elements are self-closing.</p>
+    <p>
+    All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.</p>
+    <p>
+      <b>Note:</b> If the image is purely decorative, using an empty alt attribute is a best practice.</p>
+    <p>
+      Ideally the alt attribute should not contain special characters unless needed.</p>
+    <p>
+    Let's add an alt attribute to our img example above:
+    <code>&lt;img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie."&gt;</code>
+        </p>
+      </section>
+      <section class="main-section" id="link_to_external_page">
+        <header>Link to External Page</header>
+        <p>You can use a (anchor) elements to link to content outside of your web page.<b>a</b> elements need a destination web address called an href attribute. They also need anchor text. Here's an example:
+          <code>&lt;a href="https://freecodecamp.org"&gt;this links to freecodecamp.org&lt;/a&gt;</code>
+
+    Then your browser will display the text this links to freecodecamp.org as a link you can click and that link will take you to the web address https://www.freecodecamp.org.
+        </p>
+      </section>
+      <section class="main-section" id="link_to_internal_page">
+        <header>Link to Internal Page</header>
+        <p><b>a</b> (anchor) elements can also be used to create internal links to jump to different sections within a webpage. To create an internal link, you assign a link's <b>href</b> attribute to a hash symbol <b>#</b> plus the value of the id attribute for the element that you want to internally link to, usually further down the page. You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.</p>
+    <p>Below is an example of an internal anchor link and its target element:
+    <code>
+    &lt;a href="#contacts-header"&gt;Contacts&lt;/a&gt;
+    ...
+    &lt;h2 id="contacts-header"&gt;Contacts&lt;/h2&gt;
+      </code>
+    When users click the Contacts link, they'll be taken to the section of the webpage with the Contacts header element.
+    </p>
+      </section>
+      <section class="main-section" id="turn_an_image_into_a_link">
+        <header>Turn an Image into a Link</header>
+        <p>You can make elements into links by nesting them within an a element. Nest your image within an a element. Here's an example:
+    <code>&lt;a href="#"&gt;&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."&gt;&lt;/a&gt;</code>
+          Remember to use <b>#</b> as your a element's href property in order to turn it into a dead link.
+        </p>
+      </section>
+      <section class="main-section" id="create_a_form">
+        <header>Create a Form</header>
+        <p>You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action attribute on your form element.</p>
+    <p>
+    For example:
+    <code>
+    &lt;form action="/url-where-you-want-to-submit-form-data"&gt;
+      &lt;input&gt;
+      &lt;/form&gt;</code></p>
+      </section>
+      <section class="main-section" id="create_a_radio_button">
+        <header>Create a Radio Button</header>
+        <p>You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.</p>
+    <p>
+    Radio buttons are a type of input. Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the radio button input with the label element surrounding it.</p>
+    <p>
+    All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.</p>
+        <p>Here's an example of a radio button:
+    <code>
+    &lt;label&gt;
+      &lt;input type="radio" name="indoor-outdoor"&gt;Indoor
+      &lt;/label&gt;</code>
+    </p>
+        <p>It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the child input element. </p>
+        <p>For example:
+          <code>&lt;label for="indoor"&gt;
+      &lt;input id="indoor" type="radio" name="indoor-outdoor"&gt;Indoor
+    &lt;/label&gt;
+    </code></p>
+      </section>
+      <section class="main-section" id="create_a_checkbox">
+        <header>Create a Checkbox</header>
+        <p>Forms commonly use checkboxes for questions that may have more than one answer. Checkboxes are a type of <b>input</b>. Each of your checkboxes can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the checkbox input with the label element surrounding it.</p>
+    <p>
+    All related checkbox inputs should have the same name attribute. It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by setting the for attribute on the label element to match the id attribute of the associated input element.</p>
+        <p>Here's an example of a checkbox:
+    <code>
+      &lt;label for="loving"&gt;&lt;input id="loving" type="checkbox" name="personality"&gt; Loving&lt;/label&gt;</code>
+      </p>
+      </section>
+      <section class="main-section" id="add_a_submit_button">
+        <header>Add a Submit Button</header>
+        <p>Let's add a submit button to your form. Clicking this button will send the data from your form to the URL you specified with your form's action attribute.</p>
+    <p>Here's an example submit button:
+      <code>
+        &lt;button type="submit"&gt;this button submits the form&lt;/button&gt;
+      </code>
+        </p>
+      </section>
+      <section class="main-section" id="use_HTML5_to_require_a_field">
+        <header>Use HTML5 to Require a Field</header>
+        <p>You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.</p>
+    <p>For example, if you wanted to make a text input field required, you can just add the attribute required within your input element, like this:
+      <code>&lt;input type="text" required&gt;</code></p>
+      </section>
+    </main>
+  </body>
+</html>
